@@ -24,8 +24,7 @@ Citizen.CreateThread(function()
         if  distance <= 3 then
             DrawText3D(locationData.coords, "~r~Black market~r~")
         end
-        if IsControlJustReleased(0, 38) then
-            print("good")
+        if distance <= 3 and IsControlJustReleased(0, 38) then
             SetDisplay(true)
         end
     end
